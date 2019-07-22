@@ -250,15 +250,11 @@ liczba_rzymska
 # np. „euro·sodoma”, „e-·papieros”
 moze_interp(rzeczowniki)
 
-# nazwy własne i etnonimy — wyłączenie ze zbioru ‹rzeczowniki›
+# nazwy własne, nazwiska i etnonimy — wyłączenie ze zbioru ‹rzeczowniki›
 moze_interp(wlasne)
+moze_interp(nazwiska)
+moze_interp(czlonynazwisk)
 moze_interp(etnonimy)
-
-# połączenia nazwisk i członów nazwisk dywizem: Korwin-Mikke
-# moze_interp(nazwiska)
-# moze_interp(czlonynazwisk)
-# moze_interp(czlonynazwisk> dywiz> nazwiska)
-# moze_interp(nazwiska> dywiz> nazwiska)
 
 # Nazwy geograficzne dwuczłonowe: Bielsko-Biała, Kudowa-Zdrój.
 # Nie jest to idealne rozwiązanie, ale lepszego chyba nie ma…
@@ -418,7 +414,9 @@ moze_interp( (liczba_rzymska)> dywiz> adj_pos )
 moze_interp( (liczba_rzymska)> dywiz> adv_pos )
 
 # formy złoż. z sufiksami rzeczownikowymi przyłączającymi formy złoż. liczebników:
-# moze_interp( num_zloz>+ suf_num ) !weak
+moze_interp( num_zloz>+ suf_num )
+
+# wersja z ‹pół›, np. dwudziestodwuipółlatek, to już chyba przesada… Choć Gazeta Wyborcza tak pisze…
 # moze_interp(num_zloz>+ i> pol_zloz> suf_num ) !weak
 
 # złożenia liczbowe z sufiksami rzeczownikowymi przyłączającymi formy złoż. liczebników:
@@ -485,7 +483,7 @@ pcon
 pant
 wlasne
 etnonimy
-# nazwiska
+nazwiska
 czlonynazwisk
 geograficzne
 subst
@@ -617,7 +615,7 @@ fin_imperf	fin:%:imperf
 pcon		pcon:%
 pant		pant:%
 wlasne		subst:%	name=imię
-# nazwiska	subst:%	name=nazwisko
+nazwiska	subst:%	name=nazwisko
 geograficzne	subst:%	name=geograficzna
 wlasne		subst:%	name=budowla
 wlasne		subst:%	name=firma
@@ -633,8 +631,8 @@ wlasne		subst:%	name=tytuł
 wlasne		subst:%	name=własna
 wlasne		subst:%	name=osoba
 wlasne		subst:%	name=członek_rodu
-# czlonynazwisk	subst:%	name=człon_nazwiska
-# czlonynazwisk	subst:%	name=człon_nazwiska_(herb)
+czlonynazwisk	subst:%	name=człon_nazwiska
+czlonynazwisk	subst:%	name=człon_nazwiska_(herb)
 wlasne		subst:%	name=człon_nazwy_firmy
 wlasne		subst:%	name=język_programowania
 wlasne		subst:%	name=krój_pisma
@@ -1790,6 +1788,7 @@ subst_anty_zloz	ZWM	subst:%:m3
 subst_anty_zloz	ZWZ	subst:%:m3
 subst_anty_zloz	ZZ	subst:%:m3
 # Koniec skrótowców ndm
+#
 prep_na		na	prep:%
 prep_n		do	prep:%
 prep_n		dla	prep:%
@@ -1812,7 +1811,7 @@ suf_num	latka	subst:%
 suf_num	lecie	subst:%
 suf_num	krotność	subst:%
 suf_num	ścian	subst:%
-suf_num	+kroć	adv
+suf_num	kroć	adv
 suf_ord	ty	adj:%
 suf_ord	y	adj:%
 romandigI	I	romandig
