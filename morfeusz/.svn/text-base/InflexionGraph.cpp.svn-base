@@ -123,7 +123,8 @@ static bool containsEqualEdge(const vector<InflexionGraph::Edge>& edges, const I
                 && e1.chunk.textStartPtr == e.chunk.textStartPtr
                 && e1.chunk.textEndPtr == e.chunk.textEndPtr
                 && e1.chunk.segmentType == e.chunk.segmentType
-                && e1.nextNode == e.nextNode) {
+                && e1.nextNode == e.nextNode
+                && e1.chunk.interpsGroupPtr == e.chunk.interpsGroupPtr) {
             return true;
         }
     }

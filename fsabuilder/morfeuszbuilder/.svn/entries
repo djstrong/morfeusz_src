@@ -1,14 +1,14 @@
 10
 
 dir
-332
+337
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-10-26T18:42:59.967823Z
-330
+2014-12-07T22:07:35.050887Z
+336
 michall
 
 
@@ -25,6 +25,9 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+utils
+dir
 
 __init__.py
 file
@@ -67,8 +70,5 @@ fsa
 dir
 
 segrules
-dir
-
-utils
 dir
 

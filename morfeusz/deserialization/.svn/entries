@@ -1,7 +1,7 @@
 10
 
 dir
-332
+337
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/deserialization
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,74 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+InterpsGroupsReader.cpp
+file
+
+
+
+
+2014-08-04T10:54:21.297322Z
+1ca729f04f506ea83390e07d9ffa6e85
+2014-06-13T15:53:40.004456Z
+214
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+746
+
+MorphDeserializer.cpp
+file
+
+
+
+
+2014-08-04T10:54:21.297322Z
+2bbef09c32d7fe6bce87c3f87a2c08ae
+2014-06-24T15:52:07.135921Z
+230
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+497
 
 morphInterps
 dir
@@ -164,72 +232,4 @@ michall
 
 
 555
-
-InterpsGroupsReader.cpp
-file
-
-
-
-
-2014-08-04T10:54:21.297322Z
-1ca729f04f506ea83390e07d9ffa6e85
-2014-06-13T15:53:40.004456Z
-214
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-746
-
-MorphDeserializer.cpp
-file
-
-
-
-
-2014-08-04T10:54:21.297322Z
-2bbef09c32d7fe6bce87c3f87a2c08ae
-2014-06-24T15:52:07.135921Z
-230
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-497
 

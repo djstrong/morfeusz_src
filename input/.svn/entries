@@ -1,14 +1,14 @@
 10
 
 dir
-332
+337
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/input
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-10-30T21:36:32.683657Z
-331
+2014-12-07T22:11:04.136299Z
+337
 michall
 
 
@@ -25,6 +25,40 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+empty.txt
+file
+
+
+
+
+2014-08-04T10:54:04.401323Z
+1221bd8c0e3ac6999b0ff73a39eb3ac5
+2014-01-08T19:12:37.201623Z
+67
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8
 
 morfeusz-sgjp.tagset
 file
@@ -66,10 +100,10 @@ file
 
 
 
-2014-11-06T11:47:13.720975Z
-d7b80d0c5d4eba032c063e683d1f21b0
-2014-10-30T21:36:32.683657Z
-331
+2015-01-09T15:36:59.965999Z
+3eb7e4dcf5a84b6f48673557db95872b
+2014-12-07T22:11:04.136299Z
+337
 michall
 
 
@@ -92,7 +126,7 @@ michall
 
 
 
-19907
+21009
 
 dodatki.tab
 file
@@ -100,10 +134,10 @@ file
 
 
 
-2014-11-06T11:47:13.724975Z
-e069fd1153ddb41cf9c6cfce0fbffa93
-2014-10-30T21:36:32.683657Z
-331
+2015-01-09T15:36:59.981999Z
+608551e648d1e21521ba361aa0eb48cc
+2014-12-07T22:11:04.136299Z
+337
 michall
 
 
@@ -126,7 +160,7 @@ michall
 
 
 
-13246
+12178
 
 PoliMorfSmall.tab
 file
@@ -161,38 +195,4 @@ michall
 
 
 34809
-
-empty.txt
-file
-
-
-
-
-2014-08-04T10:54:04.401323Z
-1221bd8c0e3ac6999b0ff73a39eb3ac5
-2014-01-08T19:12:37.201623Z
-67
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8
 
