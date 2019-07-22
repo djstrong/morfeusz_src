@@ -1,7 +1,7 @@
 10
 
 dir
-328
+331
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder/fsa/test
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,74 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+PoliMorfSmall.tab
+file
+
+
+
+
+2014-08-04T10:53:39.797324Z
+0511996a7272f2d4df2597a4f0b212e7
+2013-11-08T19:09:33.637314Z
+13
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3112
+
+__init__.py
+file
+
+
+
+
+2014-08-04T10:53:39.797324Z
+d41d8cd98f00b204e9800998ecf8427e
+2013-10-24T14:16:31.489049Z
+2
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
 
 dupa.png
 file
@@ -127,72 +195,4 @@ michall
 
 
 2576
-
-PoliMorfSmall.tab
-file
-
-
-
-
-2014-08-04T10:53:39.797324Z
-0511996a7272f2d4df2597a4f0b212e7
-2013-11-08T19:09:33.637314Z
-13
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3112
-
-__init__.py
-file
-
-
-
-
-2014-08-04T10:53:39.797324Z
-d41d8cd98f00b204e9800998ecf8427e
-2013-10-24T14:16:31.489049Z
-2
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
 

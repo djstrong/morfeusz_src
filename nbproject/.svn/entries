@@ -1,14 +1,14 @@
 10
 
 dir
-328
+331
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/nbproject
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-09-26T10:17:16.133568Z
-322
+2014-10-30T21:36:32.683657Z
+331
 michall
 has-props
 
@@ -66,10 +66,10 @@ file
 
 
 
-2014-09-26T13:45:42.178532Z
-cf2f769b512a7e1d4e5e1ec7efdfe562
-2014-09-26T10:17:16.133568Z
-322
+2014-11-06T11:47:13.644975Z
+a398c02caca3c8e628eb4ba44da0d7a3
+2014-10-30T21:36:32.683657Z
+331
 michall
 
 
@@ -92,5 +92,5 @@ michall
 
 
 
-31687
+31839
 

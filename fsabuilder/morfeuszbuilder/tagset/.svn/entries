@@ -1,14 +1,14 @@
 10
 
 dir
-328
+331
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder/tagset
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-09-10T15:48:08.414232Z
-312
+2014-10-26T18:42:59.967823Z
+330
 michall
 
 
@@ -100,10 +100,10 @@ file
 
 
 
-2014-08-27T16:31:19.600157Z
-f556fa3eaf664df775d2558c08c82c62
-2014-08-21T11:00:14.399232Z
-275
+2014-11-06T11:47:13.572975Z
+4dd36add25615b806ee13ecb7db491b1
+2014-10-26T18:42:59.967823Z
+330
 michall
 has-props
 
@@ -126,5 +126,5 @@ has-props
 
 
 
-2255
+2463
 
