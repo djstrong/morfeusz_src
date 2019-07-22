@@ -16,17 +16,30 @@ using namespace morfeusz;
 
 int main(int argc, const char** argv) {
     cerr << "Morfeusz generator, version: " << Morfeusz::getVersion() << endl;
-    ez::ezOptionParser& opt = *getOptions(argc, argv, GENERATOR);
-    Morfeusz* morfeusz = initializeMorfeusz(opt, GENERATOR);
+    Morfeusz* morfeusz;
+    try {
+        ez::ezOptionParser& opt = *getOptions(argc, argv, GENERATOR);
+        morfeusz = initializeMorfeusz(opt, GENERATOR);
+        delete &opt;
+    }
+    catch (const std::exception& ex) {
+        cerr << ex.what() << endl;
+        exit(1);
+    }
     string line;
     vector<MorphInterpretation> res;
-    while (getline(cin, line)) {
-        //        printf("%s\n", line.c_str());
-        res.clear();
-        morfeusz->generate(line, res);
-        printMorphResults(*morfeusz, res, false);
+    try {
+        while (getline(cin, line)) {
+         //        printf("%s\n", line.c_str());
+            res.clear();
+            morfeusz->generate(line, res);
+            printMorphResults(*morfeusz, res, false);
+        }
+    }
+    catch (const std::exception& ex) {
+        cerr << "Failed to perform morphosyntactic synthesis: " << ex.what() << endl;
+        exit(1);
     }
     printf("\n");
-    delete &opt;
     return 0;
 }

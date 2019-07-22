@@ -17,17 +17,30 @@ using namespace morfeusz;
 
 int main(int argc, const char** argv) {
     cerr << "Morfeusz analyzer, version: " << Morfeusz::getVersion() << endl;
-    ez::ezOptionParser& opt = *getOptions(argc, argv, ANALYZER);
-    Morfeusz* morfeusz = initializeMorfeusz(opt, ANALYZER);
+    Morfeusz* morfeusz;
+    try {
+        ez::ezOptionParser& opt = *getOptions(argc, argv, ANALYZER);
+        morfeusz = initializeMorfeusz(opt, ANALYZER);
+        delete &opt;
+    }
+    catch (const std::exception& ex) {
+        cerr << ex.what() << endl;
+        exit(1);
+    }
     string line;
     vector<MorphInterpretation> res;
-    while (getline(cin, line)) {
-        res.resize(0);
-        morfeusz->analyse(line, res);
-        printMorphResults(*morfeusz, res, true);
+    try {
+        while (getline(cin, line)) {
+            res.resize(0);
+            morfeusz->analyse(line, res);
+            printMorphResults(*morfeusz, res, true);
+        }
+    }
+    catch (const std::exception& ex) {
+        cerr << "Failed to perform morphosyntactic analysis: " << ex.what() << endl;
+        exit(1);
     }
     delete morfeusz;
     printf("\n");
-    delete &opt;
     return 0;
 }
