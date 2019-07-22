@@ -1,7 +1,7 @@
 10
 
 dir
-323
+327
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/tests/generator/test_additional_atomic_segments
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,74 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+segmentation.dat
+file
+
+
+
+
+2014-08-27T16:31:20.456157Z
+661fd8fb0563b96bb922be3157ca3d95
+2014-08-22T16:42:33.556914Z
+277
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+740
+
+dictionary.tab
+file
+
+
+
+
+2014-08-27T16:31:20.456157Z
+2ce746b3190badfd6da65afe9c77f078
+2014-08-20T16:55:51.977646Z
+273
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64
 
 ARGS
 file
@@ -161,72 +229,4 @@ michall
 
 
 23848
-
-segmentation.dat
-file
-
-
-
-
-2014-08-27T16:31:20.456157Z
-661fd8fb0563b96bb922be3157ca3d95
-2014-08-22T16:42:33.556914Z
-277
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-740
-
-dictionary.tab
-file
-
-
-
-
-2014-08-27T16:31:20.456157Z
-2ce746b3190badfd6da65afe9c77f078
-2014-08-20T16:55:51.977646Z
-273
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-64
 

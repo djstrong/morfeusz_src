@@ -1,7 +1,7 @@
 10
 
 dir
-323
+327
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/tests/analyzer
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -26,24 +26,6 @@ michall
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
 
-test_digits_roman
-dir
-
-test_multisegments
-dir
-
-test_digits
-dir
-
-test_names
-dir
-
-test_segtypes
-dir
-
-test_qualifiers
-dir
-
 test_whitespace_handling_append
 dir
 
@@ -60,5 +42,23 @@ test_prefixes_with_uppercase_at_the_beginning
 dir
 
 test_prefixes_with_uppercase_in_the_middle
+dir
+
+test_digits_roman
+dir
+
+test_multisegments
+dir
+
+test_digits
+dir
+
+test_names
+dir
+
+test_segtypes
+dir
+
+test_qualifiers
 dir
 

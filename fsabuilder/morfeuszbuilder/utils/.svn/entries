@@ -1,7 +1,7 @@
 10
 
 dir
-323
+327
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder/utils
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,40 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-configFile.py
-file
-
-
-
-
-2014-08-04T10:53:39.693324Z
-fa9c8e49c60895f29ac34695b77286b6
-2014-03-17T19:21:47.073544Z
-115
-michall
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2287
 
 caseconv
 dir
@@ -232,4 +198,38 @@ has-props
 
 
 363
+
+configFile.py
+file
+
+
+
+
+2014-08-04T10:53:39.693324Z
+fa9c8e49c60895f29ac34695b77286b6
+2014-03-17T19:21:47.073544Z
+115
+michall
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2287
 

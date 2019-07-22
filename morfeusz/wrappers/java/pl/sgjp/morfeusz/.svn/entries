@@ -1,7 +1,7 @@
 10
 
 dir
-323
+327
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/wrappers/java/pl/sgjp/morfeusz
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,9 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-app
-dir
 
 ResultsIterator.java
 file
@@ -96,4 +93,7 @@ michall
 
 
 4096
+
+app
+dir
 

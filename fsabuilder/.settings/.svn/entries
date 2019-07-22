@@ -1,7 +1,7 @@
 10
 
 dir
-323
+327
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/.settings
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,40 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-org.eclipse.core.resources.prefs
-file
-
-
-
-
-2014-08-04T10:53:40.221324Z
-0190a0a0a01cb48b7b530fc108721a25
-2014-04-05T12:44:00.477502Z
-153
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-180
 
 org.eclipse.ltk.core.refactoring.prefs
 file
@@ -93,4 +59,38 @@ has-props
 
 
 104
+
+org.eclipse.core.resources.prefs
+file
+
+
+
+
+2014-08-04T10:53:40.221324Z
+0190a0a0a01cb48b7b530fc108721a25
+2014-04-05T12:44:00.477502Z
+153
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+180
 
