@@ -187,6 +187,8 @@ moze_interp( (adja dywiz)+ adjp )
 
 # Formy zanegowane stopnia wyższego przymiotników i przysłówków
 # np. „nie·grzeczniejszy”, „nie·grzeczniej”
+
+moze_interp(nie)
 moze_interp( adj_com|adv_com )
 moze_interp( nie> adj_com ) !weak
 moze_interp( nie> adv_com ) !weak
@@ -446,7 +448,7 @@ prefppas
 ppas
 li
 li_tylko
-# substa
+#substa
 sufs
 suf_num
 suf_ord
@@ -547,7 +549,6 @@ samodz
 
 
 [tags]
-nie	nie
 prefs	prefs
 prefa	prefa
 #prefppas	prefppas
@@ -653,7 +654,9 @@ li	li	qub	labels=przest.
 li_tylko	li	qub	labels=przest._dziś_książk.
 ze	+że	qub
 z	+ż	qub
+nie	nie	qub
 z_aglt	bowiem	comp
+z_aglt	iż	comp
 z_aglt	cóż	subst:%
 z_aglt	gdzież	adv
 z_aglt	któż	subst:%
@@ -667,6 +670,7 @@ z_aglt	jakżeż	qub
 z_aglt	zaliż	qub
 z_aglt	już	qub
 z_aglt	skąd	adv
+z_aglt	tak	adv:%
 z_aglt_by	aby	comp
 z_aglt_by	by	comp
 z_aglt_by	choćby	comp
