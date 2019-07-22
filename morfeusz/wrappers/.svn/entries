@@ -1,15 +1,15 @@
 10
 
 dir
-339
+341
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/wrappers
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-09-29T09:04:48.378297Z
-325
-michall
+2015-04-14T10:40:13.074880Z
+341
+jszejko
 
 
 
@@ -25,6 +25,46 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+java
+dir
+
+python
+dir
+
+morfeusz.i
+file
+
+
+
+
+2014-08-27T16:31:30.476157Z
+77bda05647f113b170076833a770c6ba
+2014-08-07T17:02:11.982408Z
+250
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+560
 
 perl
 dir
@@ -232,44 +272,4 @@ michall
 
 
 73
-
-java
-dir
-
-python
-dir
-
-morfeusz.i
-file
-
-
-
-
-2014-08-27T16:31:30.476157Z
-77bda05647f113b170076833a770c6ba
-2014-08-07T17:02:11.982408Z
-250
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-560
 

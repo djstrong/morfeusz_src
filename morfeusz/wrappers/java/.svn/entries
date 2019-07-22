@@ -1,15 +1,15 @@
 10
 
 dir
-339
+341
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/wrappers/java
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-09-22T15:01:01.907468Z
-321
-michall
+2015-04-14T10:40:13.074880Z
+341
+jszejko
 
 
 
@@ -25,77 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-pl
-dir
-
-CMakeLists.txt
-file
-
-
-
-
-2014-09-22T12:54:37.284104Z
-a61af0c13965c3039607d0aac30707ee
-2014-09-03T08:29:42.103265Z
-303
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3602
-
-README
-file
-
-
-
-
-2014-08-04T10:54:21.789322Z
-2b4d5a4af4f1eec0fd73434b4e9bcbf1
-2014-06-12T14:26:00.425165Z
-210
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-197
 
 JMorfeuszTest.java
 file
@@ -133,4 +62,75 @@ michall
 
 test_lib
 dir
+
+pl
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2015-04-14T10:42:24.279118Z
+31b681710163c9b8b4549c95dde3660d
+2015-04-14T10:40:13.074880Z
+341
+jszejko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4038
+
+README
+file
+
+
+
+
+2014-08-04T10:54:21.789322Z
+2b4d5a4af4f1eec0fd73434b4e9bcbf1
+2014-06-12T14:26:00.425165Z
+210
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+197
 

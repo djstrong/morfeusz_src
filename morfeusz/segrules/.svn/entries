@@ -1,7 +1,7 @@
 10
 
 dir
-339
+341
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/segrules
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,74 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-segrules.hpp
-file
-
-
-
-
-2014-08-04T10:54:21.645322Z
-6062d4cae43efd638a1225d33962b0d6
-2014-06-13T15:53:40.004456Z
-214
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-861
-
-SegrulesFSA.cpp
-file
-
-
-
-
-2014-08-27T16:31:20.968157Z
-661891da38753b3e1260afb6c8c566c3
-2014-08-26T00:35:27.168791Z
-288
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2706
 
 SegrulesFSA.hpp
 file
@@ -161,4 +93,72 @@ michall
 
 
 3123
+
+segrules.hpp
+file
+
+
+
+
+2014-08-04T10:54:21.645322Z
+6062d4cae43efd638a1225d33962b0d6
+2014-06-13T15:53:40.004456Z
+214
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+861
+
+SegrulesFSA.cpp
+file
+
+
+
+
+2014-08-27T16:31:20.968157Z
+661891da38753b3e1260afb6c8c566c3
+2014-08-26T00:35:27.168791Z
+288
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2706
 
