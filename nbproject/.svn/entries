@@ -1,7 +1,7 @@
 10
 
 dir
-337
+338
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/nbproject
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,40 +25,6 @@ has-props
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-project.xml
-file
-
-
-
-
-2014-08-27T16:31:19.740157Z
-be260a39a26cd38d22578bfb6390b4cc
-2014-08-27T14:02:17.337495Z
-290
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1031
 
 configurations.xml
 file
@@ -93,4 +59,38 @@ michall
 
 
 32294
+
+project.xml
+file
+
+
+
+
+2014-08-27T16:31:19.740157Z
+be260a39a26cd38d22578bfb6390b4cc
+2014-08-27T14:02:17.337495Z
+290
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1031
 

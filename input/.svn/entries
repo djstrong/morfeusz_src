@@ -1,15 +1,15 @@
 10
 
 dir
-337
+338
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/input
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-12-07T22:11:04.136299Z
-337
-michall
+2015-01-27T11:17:15.203289Z
+338
+wolinski
 
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2014-11-06T11:47:13.720975Z
-b2ee6200ac7bc0b1356e0359c66754a3
-2014-10-30T21:36:32.683657Z
-331
-michall
+2015-01-27T11:23:39.513390Z
+65dfc5098547375647ff8f999c9215c6
+2015-01-27T11:17:15.203289Z
+338
+wolinski
 
 
 
@@ -92,7 +92,7 @@ michall
 
 
 
-24664
+24817
 
 segmenty.dat
 file
