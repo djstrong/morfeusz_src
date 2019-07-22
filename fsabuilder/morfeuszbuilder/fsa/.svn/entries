@@ -1,7 +1,7 @@
 10
 
 dir
-321
+323
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder/fsa
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,74 @@ has-props
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+encode.py
+file
+
+
+
+
+2014-08-27T16:31:19.640157Z
+be0ddbb48566adddb00d42910b7eb277
+2014-08-20T16:55:51.977646Z
+273
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8780
+
+visualizer.py
+file
+
+
+
+
+2014-08-04T10:53:39.985324Z
+a8767d937dc73e51c66e3c81322414cc
+2014-02-20T18:05:57.820622Z
+87
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1899
 
 __init__.py
 file
@@ -300,72 +368,4 @@ michall
 
 
 20118
-
-encode.py
-file
-
-
-
-
-2014-08-27T16:31:19.640157Z
-be0ddbb48566adddb00d42910b7eb277
-2014-08-20T16:55:51.977646Z
-273
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8780
-
-visualizer.py
-file
-
-
-
-
-2014-08-04T10:53:39.985324Z
-a8767d937dc73e51c66e3c81322414cc
-2014-02-20T18:05:57.820622Z
-87
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1899
 
