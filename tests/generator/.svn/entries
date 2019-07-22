@@ -1,14 +1,14 @@
 10
 
 dir
-331
+332
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/tests/generator
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-08-22T16:42:33.556914Z
-277
+2014-11-19T20:57:28.431131Z
+332
 michall
 
 
@@ -26,6 +26,9 @@ michall
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
 
+test_qualifiers
+dir
+
 test_additional_atomic_segments
 dir
 
@@ -36,8 +39,5 @@ test_names
 dir
 
 test_segtypes
-dir
-
-test_qualifiers
 dir
 

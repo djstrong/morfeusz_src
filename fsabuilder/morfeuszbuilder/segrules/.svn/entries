@@ -1,7 +1,7 @@
 10
 
 dir
-331
+332
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder/segrules
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,74 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+rulesManager.py
+file
+
+
+
+
+2014-08-27T16:31:19.676157Z
+4c324b418f3e16580f83955b062741af
+2014-08-22T16:42:33.556914Z
+277
+michall
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3065
+
+preprocessor.py
+file
+
+
+
+
+2014-10-13T09:09:30.630422Z
+dcd631e80c4e851d214718e6d8555315
+2014-10-12T22:13:06.288994Z
+328
+michall
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4062
 
 rulesParser.py
 file
@@ -334,72 +402,4 @@ michall
 
 
 2311
-
-rulesManager.py
-file
-
-
-
-
-2014-08-27T16:31:19.676157Z
-4c324b418f3e16580f83955b062741af
-2014-08-22T16:42:33.556914Z
-277
-michall
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3065
-
-preprocessor.py
-file
-
-
-
-
-2014-10-13T09:09:30.630422Z
-dcd631e80c4e851d214718e6d8555315
-2014-10-12T22:13:06.288994Z
-328
-michall
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4062
 

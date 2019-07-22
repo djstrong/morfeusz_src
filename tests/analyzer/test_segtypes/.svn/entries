@@ -1,14 +1,14 @@
 10
 
 dir
-331
+332
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/tests/analyzer/test_segtypes
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-08-22T16:42:33.556914Z
-277
+2014-11-19T20:57:28.431131Z
+332
 michall
 
 
@@ -25,40 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-segmentation.dat
-file
-
-
-
-
-2014-08-27T16:31:20.284157Z
-fee058c10caa1d04b4449350e481af77
-2014-08-22T16:42:33.556914Z
-277
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-564
 
 dictionary.tab
 file
@@ -202,8 +168,42 @@ file
 
 
 
-2014-08-27T16:31:20.288157Z
-200ccbe2e81e8a28e2723cb361bd3751
+2014-11-20T15:24:54.650157Z
+b2ee6200ac7bc0b1356e0359c66754a3
+2014-11-19T20:57:28.431131Z
+332
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24664
+
+segmentation.dat
+file
+
+
+
+
+2014-08-27T16:31:20.284157Z
+fee058c10caa1d04b4449350e481af77
 2014-08-22T16:42:33.556914Z
 277
 michall
@@ -228,5 +228,5 @@ michall
 
 
 
-23848
+564
 

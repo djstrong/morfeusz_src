@@ -1,7 +1,7 @@
 10
 
 dir
-331
+332
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/fsabuilder/morfeuszbuilder/utils/caseconv
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,40 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+UnicodeData.txt
+file
+
+
+
+
+2014-08-04T10:53:39.657324Z
+f179b6ab790083cecb76c48986ae2681
+2013-11-25T16:15:07.333526Z
+27
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1367023
 
 generate.py
 file
@@ -127,38 +161,4 @@ michall
 
 
 65625
-
-UnicodeData.txt
-file
-
-
-
-
-2014-08-04T10:53:39.657324Z
-f179b6ab790083cecb76c48986ae2681
-2013-11-25T16:15:07.333526Z
-27
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1367023
 
