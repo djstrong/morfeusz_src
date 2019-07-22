@@ -4,7 +4,7 @@ project (Morfeusz)
 
 set (Morfeusz_VERSION_MAJOR 1)
 set (Morfeusz_VERSION_MINOR 9)
-set (Morfeusz_VERSION_PATCH 11)
+set (Morfeusz_VERSION_PATCH 12)
 set (Morfeusz_VERSION "${Morfeusz_VERSION_MAJOR}.${Morfeusz_VERSION_MINOR}.${Morfeusz_VERSION_PATCH}")
 set (Morfeusz_LIB_VERSION "${Morfeusz_VERSION}")
 if (BUILT_ON)
@@ -90,6 +90,8 @@ endif ()
 if ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL "x86_64")
     set (ARCHITECTURE "amd64")
 elseif ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL "x86")
+    set (ARCHITECTURE "i386")
+elseif ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL "i686")
     set (ARCHITECTURE "i386")
 elseif ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL "")
     message (FATAL_ERROR "CMAKE_SYSTEM_PROCESSOR is not set (should be x86 or x86_64)")
@@ -200,6 +202,7 @@ file (COPY fsabuilder doTest.sh testJavaWrapper.sh testPythonWrapper.sh morfeusz
 
 add_subdirectory (morfeusz)
 add_subdirectory (fsabuilder)
+add_subdirectory (gui)
 
 ########## add tests ##########
 
