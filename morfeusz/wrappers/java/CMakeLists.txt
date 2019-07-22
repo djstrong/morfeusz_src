@@ -1,5 +1,5 @@
 
-set (JMORFEUSZ_VERSION "0.1.0")
+set (JMORFEUSZ_VERSION "${Morfeusz_LIB_VERSION}")
 find_package(JNI REQUIRED)
 include(UseJava)
 find_package(Java REQUIRED)
@@ -61,9 +61,10 @@ endif ()
 # build jmorfeusz
 file(GLOB_RECURSE JAVA_SOURCES "${JAVA_SRC_DIR}" "${JAVA_SRC_DIR}/*.java")
 add_jar (jmorfeusz
-    SOURCES "${JAVA_SOURCES}"
-    ENTRY_POINT pl/sgjp/morfeusz/app/App
-    DEPENDS libjmorfeusz generate-java-wrapper)
+  SOURCES "${JAVA_SOURCES}"
+  ENTRY_POINT pl/sgjp/morfeusz/app/App
+  )
+add_dependencies(jmorfeusz libjmorfeusz)
 
 add_custom_target(generate-javadoc
     COMMAND javadoc
@@ -93,6 +94,8 @@ add_custom_target(package-java
     DEPENDS jmorfeusz package-javadoc jmorfeusz-copy-readme libjmorfeusz)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
-    add_custom_target(java-deb
-        COMMAND "${PROJECT_SOURCE_DIR}/createJavaDeb.sh" "${CMAKE_CURRENT_BINARY_DIR}" "${Morfeusz_DEB_VERSION}" "${ARCHITECTURE}" "${TARGET_DIR}")
+  add_custom_target(java-deb
+    COMMAND "${PROJECT_SOURCE_DIR}/createJavaDeb.sh" "${CMAKE_CURRENT_BINARY_DIR}" "${Morfeusz_DEB_VERSION}" "${ARCHITECTURE}" "${TARGET_DIR}"
+    DEPENDS jmorfeusz libjmorfeusz
+    )
 endif ()
