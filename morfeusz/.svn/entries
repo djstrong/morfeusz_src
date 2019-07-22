@@ -1,7 +1,7 @@
 10
 
 dir
-291
+292
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,108 +25,6 @@ has-props
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-morfeusz2_c.cpp
-file
-
-
-
-
-2014-08-27T16:31:21.008157Z
-117cd98fb617aeea1dd2f6202e7407d2
-2014-08-18T18:18:51.529408Z
-272
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3772
-
-IdResolverImpl.cpp
-file
-
-
-
-
-2014-08-27T16:31:21.008157Z
-8bba164d9dc8a01fe9189bcf703e84ad
-2014-08-26T00:44:31.856155Z
-289
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4901
-
-morfeusz2.h
-file
-
-
-
-
-2014-08-27T16:31:21.012157Z
-527924b4bf10931aca0839efd7c8f506
-2014-08-27T14:15:26.118216Z
-291
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18895
 
 IdResolverImpl.hpp
 file
@@ -443,51 +341,17 @@ michall
 
 290
 
-fsa
-dir
-
 data
 dir
 
-c_api
+fsa
 dir
 
 case
 dir
 
-MorfeuszOptions.hpp
-file
-
-
-
-
-2014-08-04T10:54:21.945322Z
-81d863b3babcb6fe3ea780c2f658e4ca
-2014-06-25T16:36:30.431265Z
-231
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-481
+c_api
+dir
 
 const.hpp
 file
@@ -523,16 +387,16 @@ michall
 
 489
 
-CMakeLists.txt
+MorfeuszOptions.hpp
 file
 
 
 
 
-2014-08-27T16:31:21.024157Z
-d3eb2d992068f0b13799a403c1619d4d
-2014-08-14T16:31:48.689997Z
-266
+2014-08-04T10:54:21.945322Z
+81d863b3babcb6fe3ea780c2f658e4ca
+2014-06-25T16:36:30.431265Z
+231
 michall
 
 
@@ -555,7 +419,7 @@ michall
 
 
 
-5084
+481
 
 MorfeuszImpl.cpp
 file
@@ -590,6 +454,40 @@ michall
 
 
 25163
+
+CMakeLists.txt
+file
+
+
+
+
+2014-08-27T16:31:21.024157Z
+d3eb2d992068f0b13799a403c1619d4d
+2014-08-14T16:31:48.689997Z
+266
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5084
 
 ResultsIteratorImpl.cpp
 file
@@ -795,9 +693,6 @@ michall
 
 1833
 
-segrules
-dir
-
 test_runner.cpp
 file
 
@@ -831,6 +726,9 @@ michall
 
 
 1019
+
+segrules
+dir
 
 Environment.hpp
 file
@@ -1075,4 +973,106 @@ michall
 
 
 370
+
+morfeusz2_c.cpp
+file
+
+
+
+
+2014-08-27T16:31:21.008157Z
+117cd98fb617aeea1dd2f6202e7407d2
+2014-08-18T18:18:51.529408Z
+272
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3772
+
+IdResolverImpl.cpp
+file
+
+
+
+
+2014-08-27T16:31:21.008157Z
+8bba164d9dc8a01fe9189bcf703e84ad
+2014-08-26T00:44:31.856155Z
+289
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4901
+
+morfeusz2.h
+file
+
+
+
+
+2014-08-27T16:31:21.012157Z
+527924b4bf10931aca0839efd7c8f506
+2014-08-27T14:15:26.118216Z
+291
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18895
 

@@ -1,7 +1,7 @@
 10
 
 dir
-291
+292
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/toolchains
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,6 +25,74 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
+
+Toolchain-Darwin-amd64.cmake
+file
+
+
+
+
+2014-08-04T10:54:20.949322Z
+714c6e0361d816d9be900fda6d3b8b2d
+2014-06-12T14:26:00.425165Z
+210
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1086
+
+Toolchain-Windows-i386.cmake
+file
+
+
+
+
+2014-08-04T10:54:20.949322Z
+3b5c6fc42932d3300046ee1bea6c30eb
+2014-06-12T14:26:00.425165Z
+210
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+962
 
 Toolchain-Windows-amd64.cmake
 file
@@ -127,72 +195,4 @@ michall
 
 
 453
-
-Toolchain-Darwin-amd64.cmake
-file
-
-
-
-
-2014-08-04T10:54:20.949322Z
-714c6e0361d816d9be900fda6d3b8b2d
-2014-06-12T14:26:00.425165Z
-210
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1086
-
-Toolchain-Windows-i386.cmake
-file
-
-
-
-
-2014-08-04T10:54:20.949322Z
-3b5c6fc42932d3300046ee1bea6c30eb
-2014-06-12T14:26:00.425165Z
-210
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-962
 
