@@ -1,14 +1,14 @@
 10
 
 dir
-292
+321
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/deserialization/morphInterps
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-08-06T12:38:23.666533Z
-248
+2014-09-07T15:45:52.418836Z
+307
 michall
 
 
@@ -25,40 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-compressionByteUtils.hpp
-file
-
-
-
-
-2014-08-04T10:54:21.245322Z
-5e06b0066a8020d1e028c248ed6e5b6a
-2014-06-13T15:53:40.004456Z
-214
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1465
 
 InterpretedChunksDecoder.hpp
 file
@@ -134,10 +100,10 @@ file
 
 
 
-2014-08-27T16:31:20.660157Z
-ff9f579a8a55a3c83214d5b67e910f64
-2014-08-06T12:13:21.237898Z
-245
+2014-09-22T12:54:36.924104Z
+8e191c1a5d22007dc514742b7cffb9cb
+2014-09-07T15:45:52.418836Z
+307
 michall
 
 
@@ -160,7 +126,7 @@ michall
 
 
 
-6895
+7831
 
 InterpretedChunksDecoder4Generator.cpp
 file
@@ -202,10 +168,10 @@ file
 
 
 
-2014-08-04T10:54:21.241322Z
-b5c74b132e680e97ea5f3e609c00046c
-2014-06-13T15:53:40.004456Z
-214
+2014-09-22T12:54:36.924104Z
+2ba7c6a033159a72e109a40055b4c586
+2014-09-03T08:29:42.103265Z
+303
 michall
 
 
@@ -228,7 +194,7 @@ michall
 
 
 
-1757
+1789
 
 InterpretedChunksDecoder.cpp
 file
@@ -297,4 +263,38 @@ michall
 
 
 1369
+
+compressionByteUtils.hpp
+file
+
+
+
+
+2014-08-04T10:54:21.245322Z
+5e06b0066a8020d1e028c248ed6e5b6a
+2014-06-13T15:53:40.004456Z
+214
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1465
 

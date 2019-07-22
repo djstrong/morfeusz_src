@@ -1,14 +1,14 @@
 10
 
 dir
-292
+321
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-08-27T14:15:26.118216Z
-291
+2014-09-22T15:01:01.907468Z
+321
 michall
 has-props
 
@@ -26,16 +26,16 @@ has-props
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
 
-IdResolverImpl.hpp
+morfeusz2.h
 file
 
 
 
 
-2014-08-27T16:31:21.012157Z
-9b7ffe7a121c14f6040472c48c9ab7a3
-2014-08-21T11:00:14.399232Z
-275
+2014-09-22T12:54:37.404104Z
+e3172d93c912deef60983127c2affb15
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -58,18 +58,18 @@ michall
 
 
 
-1733
+19428
 
-Dictionary.cpp
+MorfeuszImpl.hpp
 file
 
 
 
 
-2014-08-27T16:31:21.012157Z
-69c54d50e264633b20cd27790fe5cc3a
-2014-08-18T18:18:51.529408Z
-272
+2014-09-22T12:54:37.416104Z
+8480e2b10608d574ab83c53ae1816647
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -92,92 +92,27 @@ michall
 
 
 
-2613
+6583
 
 deserialization
 dir
 
-InterpsGroup.hpp
-file
-
-
-
-
-2014-08-27T16:31:21.016157Z
-5257aa3d6e3febe70e21f221a0324275
-2014-08-26T00:44:31.856155Z
-289
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-474
-
 charset
 dir
 
-Dictionary.hpp
-file
-
-
-
-
-2014-08-27T16:31:21.016157Z
-87673b7ab54e09901e66db4b732f255a
-2014-08-18T18:18:51.529408Z
-272
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1106
+segrules
+dir
 
-DictionariesRepository.cpp
+Morfeusz.cpp
 file
 
 
 
 
-2014-08-27T16:31:21.016157Z
-42dd64461092b7ffa51da25e6468c73a
-2014-08-26T00:44:31.856155Z
-289
+2014-09-22T12:54:37.424104Z
+dd4cd38254502a5f2aa8e4de14d97fcb
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -200,18 +135,18 @@ michall
 
 
 
-5491
+1228
 
-morfeusz_generator.cpp
+InflexionGraph.cpp
 file
 
 
 
 
-2014-08-27T16:31:21.020157Z
-dfb93bd14a9a55574456c7da21e4fdec
-2014-08-10T21:29:08.903969Z
-254
+2014-09-22T12:54:37.424104Z
+ba33f615f20756992ae1e057c26d16f2
+2014-08-31T18:33:08.672958Z
+294
 michall
 
 
@@ -234,21 +169,21 @@ michall
 
 
 
-798
+7930
 
 tests
 dir
 
-DictionariesRepository.hpp
+InflexionGraph.hpp
 file
 
 
 
 
-2014-08-27T16:31:21.020157Z
-bbc10c3b93ed24398bb826d881f3c464
-2014-08-26T00:44:31.856155Z
-289
+2014-08-04T10:54:21.961322Z
+de067513da51889614c45ee407c3239d
+2014-06-13T15:02:10.938970Z
+213
 michall
 
 
@@ -271,41 +206,10 @@ michall
 
 
 
-1713
+2334
 
-InterpretedChunk.hpp
-file
-
-
-
-
-2014-08-04T10:54:21.941322Z
-11f76c4545e562a3c6243517494a6ca7
-2014-06-27T22:00:59.632960Z
-237
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1985
+wrappers
+dir
 
 const.cpp
 file
@@ -313,10 +217,10 @@ file
 
 
 
-2014-08-27T16:31:21.020157Z
-df80e081c3767fc801235d8ee30fcd53
-2014-08-11T16:52:43.484891Z
-255
+2014-09-22T12:54:37.412104Z
+43f4d339cef6eee2cc15ae5f580c1a2d
+2014-09-11T13:12:46.119395Z
+313
 michall
 
 
@@ -339,15 +243,9 @@ michall
 
 
 
-290
-
-data
-dir
+1755
 
 fsa
-dir
-
-case
 dir
 
 c_api
@@ -359,10 +257,10 @@ file
 
 
 
-2014-08-27T16:31:21.024157Z
-d455ce518a55f60aa791b33e65ac0615
-2014-08-11T16:52:43.484891Z
-255
+2014-09-22T12:54:37.412104Z
+a9c37a53ad86ca8552a4a5f5eeae7c09
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -385,7 +283,7 @@ michall
 
 
 
-489
+549
 
 MorfeuszOptions.hpp
 file
@@ -421,74 +319,6 @@ michall
 
 481
 
-MorfeuszImpl.cpp
-file
-
-
-
-
-2014-08-27T16:31:21.024157Z
-0c5363ca4823fdfbd394de9c116df2c3
-2014-08-27T14:02:17.337495Z
-290
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-25163
-
-CMakeLists.txt
-file
-
-
-
-
-2014-08-27T16:31:21.024157Z
-d3eb2d992068f0b13799a403c1619d4d
-2014-08-14T16:31:48.689997Z
-266
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5084
-
 ResultsIteratorImpl.cpp
 file
 
@@ -523,16 +353,16 @@ michall
 
 1517
 
-MorfeuszImpl.hpp
+IdResolverImpl.cpp
 file
 
 
 
 
-2014-08-27T16:31:21.028157Z
-4d0ead73b787761264fceb4c5e5a512b
-2014-08-27T14:02:17.337495Z
-290
+2014-09-22T12:54:37.404104Z
+f22ba80ae986a77f4e4ec5d9d1aba694
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -555,7 +385,7 @@ michall
 
 
 
-6496
+5073
 
 ResultsIteratorImpl.hpp
 file
@@ -631,10 +461,10 @@ file
 
 
 
-2014-08-27T16:31:21.032157Z
-772220f151bed11738e12abd502c8247
-2014-08-27T14:02:17.337495Z
-290
+2014-09-22T12:54:37.420104Z
+480f77b13655856f4eab8c653ac2f8d4
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -657,7 +487,75 @@ michall
 
 
 
-6139
+6250
+
+IdResolverImpl.hpp
+file
+
+
+
+
+2014-08-27T16:31:21.012157Z
+9b7ffe7a121c14f6040472c48c9ab7a3
+2014-08-21T11:00:14.399232Z
+275
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1733
+
+Dictionary.cpp
+file
+
+
+
+
+2014-09-22T12:54:37.404104Z
+adef83e1a0dc300749844d08f46b3fa0
+2014-09-10T15:48:08.414232Z
+312
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2870
 
 utils.hpp
 file
@@ -693,6 +591,40 @@ michall
 
 1833
 
+InterpsGroup.hpp
+file
+
+
+
+
+2014-08-27T16:31:21.016157Z
+5257aa3d6e3febe70e21f221a0324275
+2014-08-26T00:44:31.856155Z
+289
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+474
+
 test_runner.cpp
 file
 
@@ -727,19 +659,16 @@ michall
 
 1019
 
-segrules
-dir
-
 Environment.hpp
 file
 
 
 
 
-2014-08-27T16:31:21.032157Z
-a5eb3cce18724c5bba3ee987dbe0bf9f
-2014-08-27T14:02:17.337495Z
-290
+2014-09-22T12:54:37.420104Z
+365f0a869926ddc6f1be5f09c18b2005
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -762,18 +691,18 @@ michall
 
 
 
-4820
+4877
 
-Morfeusz.cpp
+Dictionary.hpp
 file
 
 
 
 
-2014-08-27T16:31:21.036157Z
-d5ad0274e730721de67f29e5918a6054
-2014-08-27T14:02:17.337495Z
-290
+2014-09-22T12:54:37.408104Z
+6720c65042863c5edd57d21452673ca1
+2014-09-10T15:48:08.414232Z
+312
 michall
 
 
@@ -796,18 +725,18 @@ michall
 
 
 
-1143
+1161
 
-InflexionGraph.cpp
+DictionariesRepository.cpp
 file
 
 
 
 
-2014-08-04T10:54:21.957322Z
-b94256a687f9f590ffd8fb71acf62238
-2014-06-24T15:52:07.135921Z
-230
+2014-08-27T16:31:21.016157Z
+42dd64461092b7ffa51da25e6468c73a
+2014-08-26T00:44:31.856155Z
+289
 michall
 
 
@@ -830,7 +759,7 @@ michall
 
 
 
-7915
+5491
 
 MorphInterpretation.cpp
 file
@@ -866,14 +795,116 @@ michall
 
 1142
 
+morfeusz_analyzer_old.cpp
+file
+
+
+
+
+2014-09-22T12:54:37.424104Z
+79c0359d13ad32471e53e056acdee4c2
+2014-09-15T10:43:58.222700Z
+316
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1079
+
 morfeusz_analyzer.cpp
 file
 
 
 
 
-2014-08-27T16:31:21.036157Z
-87986fefcaa3ee228f320aaa67fbe679
+2014-09-22T12:54:37.428104Z
+a14a3b34a2b48988f8d356bb7eb97991
+2014-09-21T20:14:56.528037Z
+319
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+775
+
+morfeusz_generator.cpp
+file
+
+
+
+
+2014-09-22T12:54:37.408104Z
+1beec5c969fb6a68c08e056c8cbc85c5
+2014-08-31T18:33:08.672958Z
+294
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+803
+
+DictionariesRepository.hpp
+file
+
+
+
+
+2014-08-27T16:31:21.020157Z
+bbc10c3b93ed24398bb826d881f3c464
 2014-08-26T00:44:31.856155Z
 289
 michall
@@ -898,18 +929,18 @@ michall
 
 
 
-773
+1713
 
-InflexionGraph.hpp
+InterpretedChunk.hpp
 file
 
 
 
 
-2014-08-04T10:54:21.961322Z
-de067513da51889614c45ee407c3239d
-2014-06-13T15:02:10.938970Z
-213
+2014-09-22T12:54:37.412104Z
+345673a4d0ea050eeafc0d5b1bbf5712
+2014-09-07T15:45:52.418836Z
+307
 michall
 
 
@@ -932,12 +963,12 @@ michall
 
 
 
-2334
-
-wrappers
-dir
+2146
 
 cli
+dir
+
+data
 dir
 
 ChunkBounds.hpp
@@ -974,16 +1005,87 @@ michall
 
 370
 
+case
+dir
+
+MorfeuszImpl.cpp
+file
+
+
+
+
+2014-09-22T12:54:37.416104Z
+6f366934485eacfab746a7039f9a1c11
+2014-09-21T20:14:56.528037Z
+319
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26026
+
+CMakeLists.txt
+file
+
+
+
+
+2014-09-22T12:54:37.416104Z
+a0196a4c6eec4913217ec8ad8ce85173
+2014-09-15T10:43:58.222700Z
+316
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5478
+
 morfeusz2_c.cpp
 file
 
 
 
 
-2014-08-27T16:31:21.008157Z
-117cd98fb617aeea1dd2f6202e7407d2
-2014-08-18T18:18:51.529408Z
-272
+2014-09-22T12:54:37.400104Z
+3561b17fad8f11e8d4eda2e259dc90c3
+2014-09-15T10:43:58.222700Z
+316
 michall
 
 
@@ -1006,73 +1108,5 @@ michall
 
 
 
-3772
-
-IdResolverImpl.cpp
-file
-
-
-
-
-2014-08-27T16:31:21.008157Z
-8bba164d9dc8a01fe9189bcf703e84ad
-2014-08-26T00:44:31.856155Z
-289
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4901
-
-morfeusz2.h
-file
-
-
-
-
-2014-08-27T16:31:21.012157Z
-527924b4bf10931aca0839efd7c8f506
-2014-08-27T14:15:26.118216Z
-291
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18895
+3789
 

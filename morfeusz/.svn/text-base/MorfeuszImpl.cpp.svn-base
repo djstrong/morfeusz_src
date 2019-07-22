@@ -38,13 +38,7 @@ namespace morfeusz {
         res.debug = false;
         return res;
     }
-
-    static void doShiftOrth(InterpretedChunk& from, InterpretedChunk& to) {
-        to.prefixChunks.push_back(from);
-        to.textStartPtr = from.textStartPtr;
-        from.orthWasShifted = true;
-    }
-
+    
     static string debugInterpsGroup(unsigned char type, const char* startPtr, const char* endPtr) {
         stringstream res;
         res << "(" << (int) type << ", " << string(startPtr, endPtr) << "), ";
@@ -54,10 +48,21 @@ namespace morfeusz {
     static string debugAccum(vector<InterpretedChunk>& accum) {
         stringstream res;
         for (unsigned int i = 0; i < accum.size(); i++) {
-            res << debugInterpsGroup(accum[i].segmentType, accum[i].textStartPtr, accum[i].textEndPtr);
-            //        res << "(" << (int) accum[i].interpsGroup.type << ", " << string(accum[i].chunkStartPtr, accum[i].chunkStartPtr) << "), ";
+            res << debugInterpsGroup(accum[i].segmentType, accum[i].textNoPrefixesStartPtr, accum[i].textEndPtr);
         }
         return res.str();
+    }
+
+    static void doShiftOrth(InterpretedChunk& from, InterpretedChunk& to) {
+        to.prefixChunks.swap(from.prefixChunks); // from.prefixChunks are ignored anyway. Will swap them back in doUnshiftOrth
+        to.prefixChunks.push_back(from);
+        to.textStartPtr = from.textStartPtr;
+        from.orthWasShifted = true;
+    }
+    
+    static void doUnshiftOrth(InterpretedChunk& from, InterpretedChunk& to) {
+        to.prefixChunks.swap(from.prefixChunks);
+        from.prefixChunks.pop_back();
     }
 
     static void feedStateDirectly(
@@ -101,7 +106,8 @@ namespace morfeusz {
         const unsigned char* interpsEndPtr = ig.ptr + ig.size;
         InterpretedChunk ic;
         ic.segmentType = ig.type;
-        ic.textStartPtr = reader.getWordStartPtr();
+        ic.textStartPtr = reader.getWordStartPtr(); // may be changed later in doShiftOrth(...) function
+        ic.textNoPrefixesStartPtr = ic.textStartPtr;
         ic.textEndPtr = homonymId.empty() ? reader.getCurrPtr() : reader.getCurrPtr() - homonymId.length() - 1;
         ic.interpsGroupPtr = ig.ptr;
         ic.interpsEndPtr = interpsEndPtr;
@@ -129,6 +135,14 @@ namespace morfeusz {
 
     Morfeusz* MorfeuszImpl::clone() const {
         return new MorfeuszImpl(*this);
+    }
+
+    string MorfeuszImpl::getDictID() const {
+        return getAnyEnvironment().getCurrentDictionary()->id;
+    }
+    
+    string MorfeuszImpl::getDictCopyright() const {
+        return getAnyEnvironment().getCurrentDictionary()->copyright;
     }
 
     void MorfeuszImpl::setDictionary(const string& dictName) {
@@ -283,7 +297,10 @@ namespace morfeusz {
                             ic.textStartPtr == reader.getWordStartPtr()
                             ? reader.getChunkStartPtr()
                             : ic.textStartPtr;
-                    ic.chunkEndPtr = chunkBounds.chunkEndPtr;
+                    ic.chunkEndPtr = 
+                            ic.textEndPtr == chunkBounds.wordEndPtr
+                            ? chunkBounds.chunkEndPtr
+                            : ic.textEndPtr;
                     interpretedChunksDecoder.decode(srcNode, targetNode, ic, results);
                 }
                 srcNode++;
@@ -307,11 +324,10 @@ namespace morfeusz {
             const SegrulesState& segrulesState) const {
         if (this->options.debug) {
             cerr << "----------" << endl;
-            cerr << "PROCESS: '" << reader.getCurrPtr() << "', already recognized: " << debugAccum(accum) << endl;
+            cerr << "doProcessOneWord: '" << reader.getCurrPtr() << "', already recognized: " << debugAccum(accum) << endl;
         }
         StateType state = env.getFSA().getInitialState();
         string homonymId;
-//        vector<SegrulesState> newSegrulesStates;
         while (!reader.isAtWhitespace()) {
             feedState(env, state, reader);
             if (state.isSink()) {
@@ -339,13 +355,14 @@ namespace morfeusz {
             const string& homonymId,
             const InterpsGroup& ig) const {
         if (this->options.debug) {
-            std::cerr << "FOUND interps group, segmentType=" << (int) ig.type << std::endl;
+            std::cerr << "processInterpsGroup, segmentType=" << (int) ig.type << std::endl;
         }
         bool caseMatches = env.getCasePatternHelper().checkInterpsGroupOrthCasePatterns(env, reader.getWordStartPtr(), reader.getCurrPtr(), ig);
         if (caseMatches || options.caseHandling == CONDITIONALLY_CASE_SENSITIVE) {
             SegrulesState newSegrulesState;
             env.getCurrentSegrulesFSA().proceedToNext(ig.type, segrulesState, isAtWhitespace, newSegrulesState);
             if (!newSegrulesState.failed) {
+                
                 InterpretedChunk ic(
                         createChunk(ig, reader, newSegrulesState.shiftOrthFromPrevious, homonymId));
 
@@ -373,8 +390,10 @@ namespace morfeusz {
             bool caseMatches,
             const SegrulesState& newSegrulesState,
             InterpretedChunk& ic) const {
+        bool orthShifted = false;
         if (!accum.empty() && accum.back().shiftOrth) {
             doShiftOrth(accum.back(), ic);
+            orthShifted = true;
         }
         if (!caseMatches && options.caseHandling == CONDITIONALLY_CASE_SENSITIVE) {
             notMatchingCaseSegs++;
@@ -384,15 +403,19 @@ namespace morfeusz {
         if (isAtWhitespace) {
             assert(newSegrulesState.accepting);
             if (this->options.debug) {
-                cerr << "ACCEPTING " << debugAccum(accum) << endl;
+                cerr << "ACCEPTING " << debugAccum(accum) << " prefixChunks: " << debugAccum(accum.back().prefixChunks) << endl;
             }
             graph.addPath(accum, newSegrulesState.weak || notMatchingCaseSegs > 0);
-        } else {
+        } 
+        else {
             assert(!newSegrulesState.sink);
             TextReader newReader(reader.getCurrPtr(), reader.getEndPtr(), env);
             doProcessOneWord(env, newReader, newSegrulesState);
         }
         accum.pop_back();
+        if (orthShifted) {
+            doUnshiftOrth(accum.back(), ic);
+        }
         if (!caseMatches && options.caseHandling == CONDITIONALLY_CASE_SENSITIVE) {
             notMatchingCaseSegs--;
         }

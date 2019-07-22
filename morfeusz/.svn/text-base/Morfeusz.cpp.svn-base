@@ -1,5 +1,6 @@
 
 #include <string>
+#include "const.hpp"
 #include "morfeusz2.h"
 #include "MorfeuszImpl.hpp"
 
@@ -8,11 +9,15 @@ namespace morfeusz {
     using namespace std;
 
     string Morfeusz::getVersion() {
-        return string(MORFEUSZ2_VERSION);
+        return MORFEUSZ2_VERSION;
     }
 
     string Morfeusz::getDefaultDictName() {
-        return string(MORFEUSZ_DEFAULT_DICT_NAME);
+        return MORFEUSZ_DEFAULT_DICT_NAME;
+    }
+    
+    string Morfeusz::getCopyright() {
+        return COPYRIGHT_TEXT;
     }
 
     Morfeusz* Morfeusz::createInstance(MorfeuszUsage usage) {

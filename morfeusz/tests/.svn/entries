@@ -1,14 +1,14 @@
 10
 
 dir
-292
+321
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/tests
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-08-27T14:02:17.337495Z
-290
+2014-09-15T10:43:58.222700Z
+316
 michall
 has-props
 
@@ -66,10 +66,10 @@ file
 
 
 
-2014-08-27T16:31:20.836157Z
-8e5ef7010ba47aa2595e1ce94d2267c3
-2014-08-18T18:18:51.529408Z
-272
+2014-09-22T12:54:37.000104Z
+1b8e9f339e8728a16871e3c1a7a99ca3
+2014-09-15T10:43:58.222700Z
+316
 michall
 
 
@@ -92,7 +92,7 @@ michall
 
 
 
-7207
+7060
 
 TestMorfeusz.hpp
 file

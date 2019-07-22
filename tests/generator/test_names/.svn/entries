@@ -1,7 +1,7 @@
 10
 
 dir
-292
+321
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/tests/generator/test_names
 svn://chopin.ipipan.waw.pl/morfeusz
 
@@ -25,74 +25,6 @@ michall
 
 
 ff4e3ee1-f430-4e82-ade0-24591c43f1fd
-
-ARGS
-file
-
-
-
-
-2014-08-27T16:31:20.396157Z
-824fd155304ccebecfef922a8e1983ee
-2014-08-13T14:25:18.143496Z
-258
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18
-
-input.txt
-file
-
-
-
-
-2014-08-27T16:31:20.396157Z
-9c79412a43bb42fce8ab0d37a28f5c02
-2014-08-13T14:25:18.143496Z
-258
-michall
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9
 
 output.txt
 file
@@ -229,4 +161,72 @@ michall
 
 
 170
+
+ARGS
+file
+
+
+
+
+2014-08-27T16:31:20.396157Z
+824fd155304ccebecfef922a8e1983ee
+2014-08-13T14:25:18.143496Z
+258
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18
+
+input.txt
+file
+
+
+
+
+2014-08-27T16:31:20.396157Z
+9c79412a43bb42fce8ab0d37a28f5c02
+2014-08-13T14:25:18.143496Z
+258
+michall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9
 

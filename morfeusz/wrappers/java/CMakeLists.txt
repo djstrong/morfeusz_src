@@ -22,7 +22,7 @@ add_custom_target(generate-java-wrapper ALL
     DEPENDS ${SWIG_JAVA_OUTFILE})
 
 add_library (libjmorfeusz SHARED ${SWIG_JAVA_OUTFILE})
-add_dependencies (libjmorfeusz generate_java_wrapper)
+add_dependencies (libjmorfeusz generate-java-wrapper)
 set_target_properties (libjmorfeusz PROPERTIES OUTPUT_NAME "jmorfeusz")
 target_link_libraries (libjmorfeusz ${JAVA_LIBRARIES} libmorfeusz)
 
@@ -61,7 +61,7 @@ add_jar (jmorfeusz
 
 add_custom_target(generate-javadoc
     COMMAND javadoc
-        -d "${CMAKE_CURRENT_BINARY_DIR}/jmorfeusz_javadoc"
+        -d "${TARGET_DIR}/javadoc"
         -sourcepath "${CMAKE_CURRENT_BINARY_DIR}"
         -windowtitle "JMorfeusz - Morfeusz Java binding"
         -use
@@ -71,7 +71,7 @@ add_custom_target(generate-javadoc
     DEPENDS jmorfeusz)
 
 add_custom_target(package-javadoc
-    COMMAND mkdir -p "${TARGET_DIR}" && ${CMAKE_COMMAND} -E tar "cfvz" "${TARGET_DIR}/jmorfeusz_javadoc.tgz" "${CMAKE_CURRENT_BINARY_DIR}/jmorfeusz_javadoc"
+    COMMAND mkdir -p "${TARGET_DIR}" && ${CMAKE_COMMAND} -E tar "cfvz" "${TARGET_DIR}/javadoc.tgz" "${TARGET_DIR}/javadoc"
     DEPENDS generate-javadoc)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")

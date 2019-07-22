@@ -1,14 +1,14 @@
 10
 
 dir
-292
+321
 svn://chopin.ipipan.waw.pl/morfeusz/trunk/morfeusz/c_api
 svn://chopin.ipipan.waw.pl/morfeusz
 
 
 
-2014-08-26T00:44:31.856155Z
-289
+2014-08-31T18:37:33.853106Z
+295
 michall
 
 
@@ -66,10 +66,10 @@ file
 
 
 
-2014-08-27T16:31:20.896157Z
-1bd779e1f6f800a04d95d65e14b0681c
-2014-08-26T00:44:31.856155Z
-289
+2014-09-22T12:54:37.108104Z
+6d96c4c61e425f89e0458f75dbd8fbdb
+2014-08-31T18:37:33.853106Z
+295
 michall
 
 
@@ -92,5 +92,5 @@ michall
 
 
 
-1561
+1563
 

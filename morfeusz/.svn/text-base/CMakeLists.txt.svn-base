@@ -38,6 +38,9 @@ else ()
     add_custom_target ( generator-dictionary DEPENDS "${GENERATOR_DICTIONARY_FILE}")
 endif ()
 add_custom_target ( dictionary DEPENDS analyzer-dictionary generator-dictionary)
+add_custom_target ( dictionary-deb
+        COMMAND "${PROJECT_SOURCE_DIR}/createDictionaryDeb.sh" "${DEFAULT_DICT_DIR}" "${DEFAULT_DICT_NAME}" "${DICT_VERSION}" "${TARGET_DIR}"
+        DEPENDS dictionary)
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
 
@@ -71,6 +74,7 @@ set(SRC_FILES
     deserialization/MorphDeserializer.cpp
     morfeusz2_c.cpp
     c_api/ResultsManager.cpp
+    morfeusz_analyzer_old.cpp
 )
 
 if (EMBEDDED_DEFAULT_DICT)
@@ -85,9 +89,11 @@ add_library (libmorfeusz SHARED ${SRC_FILES})
 set_target_properties (libmorfeusz PROPERTIES OUTPUT_NAME "morfeusz2")
 
 add_executable (morfeusz_analyzer morfeusz_analyzer.cpp)
+add_executable (morfeusz_analyzer_old morfeusz_analyzer_old.cpp)
 add_executable (morfeusz_generator morfeusz_generator.cpp)
 
 target_link_libraries (morfeusz_analyzer libmorfeusz)
+target_link_libraries (morfeusz_analyzer_old libmorfeusz)
 target_link_libraries (morfeusz_generator libmorfeusz)
 
 add_subdirectory (wrappers)
@@ -106,17 +112,20 @@ else ()
     set (TARGET_LIB_DIR lib)
 endif ()
 
-install (FILES morfeusz2.h morfeusz2_c.h DESTINATION include)
+# INSTALL
+
 if (NOT EMBEDDED_DEFAULT_DICT)
     add_dependencies (libmorfeusz dictionary)
     install (FILES "${ANALYZER_DICTIONARY_FILE}" "${GENERATOR_DICTIONARY_FILE}" DESTINATION "${DEFAULT_DICT_INSTALL_DIR}")
 endif ()
+
+install (FILES morfeusz2.h morfeusz2_c.h DESTINATION include)
 install (TARGETS libmorfeusz DESTINATION ${TARGET_LIB_DIR})
 install (TARGETS morfeusz_analyzer morfeusz_generator DESTINATION bin)
 
 # TESTING
 
-if (NOT CMAKE_CROSSCOMPILING AND NOT SKIP_TESTING)
+if (NOT CMAKE_CROSSCOMPILING AND NOT SKIP_TESTING AND NOT ONLY_DICTIONARY)
     find_library(CPPUNIT_LIB cppunit)
     if(${CPPUNIT_LIB} STREQUAL "CPPUNIT_LIB-NOTFOUND")
         message(FATAL_ERROR "Couldn't find cppunit library. Please install cppunit or add -D SKIP_TESTING=1 option.")
